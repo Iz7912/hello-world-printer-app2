@@ -40,9 +40,9 @@ dependencies {
 }
 
 jar {
-  manifest { 
+  manifest {
     attributes "Main-Class": "$mainClassName"
-  }  
+  }
 
   from {
     configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
@@ -53,8 +53,8 @@ checkstyle {
   toolVersion = '7.6'
 }
 
-tasks.withType(Checkstyle) {
-  reports {
-    html.destination rootProject.file("build/reports/checkstyle.html")
-  }
-}
+//tasks.withType(Checkstyle) {
+//  reports {
+//    html.destination rootProject.file("build/reports/checkstyle.html")
+//  }
+//}
