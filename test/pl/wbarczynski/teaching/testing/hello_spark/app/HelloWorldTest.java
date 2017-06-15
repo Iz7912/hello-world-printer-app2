@@ -18,7 +18,7 @@ public class HelloWorldTest {
     assertEquals(expected, actualValue);
   }
 
-  protected class RequestMock extends Request {
+  static class RequestMock extends Request {
     public String returnedValue;
 
     public RequestMock(String returnedValue) {
