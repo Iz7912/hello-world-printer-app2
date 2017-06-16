@@ -56,8 +56,8 @@ checkstyle {
 tasks.withType(Checkstyle) {
   reports {
 //    html.destination rootProject.file("build/reports/checkstyle.html")
-    xml.enabled = false
-    html.enabled = true
+    xml.enabled = true
+    html.enabled = false
   }
 }
 
