@@ -61,7 +61,6 @@ tasks.withType(Checkstyle) {
   }
 }
 
-
 tasks.withType(FindBugs) {
   reports {
     xml.enabled = false
