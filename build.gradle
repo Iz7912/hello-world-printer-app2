@@ -60,7 +60,7 @@ tasks.withType(Checkstyle) {
   }
 }
 
-task.eithType(FindBugs) {
+task.withType(FindBugs) {
   reports {
     xml.enabled = false
     html.enabled = true
